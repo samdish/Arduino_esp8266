@@ -1,6 +1,6 @@
 # Arduino_esp8266
 
-This repo contains the arduino code for creating a web server using esp8266 modele.
+This repo contains the arduino code for creating a web server using esp8266 module.
 
 - The esp8266 module is used in mode 2, i.e. as an Access point. Hence, a hotspot is created.
 - Then Arduino's data is sent to the server.
