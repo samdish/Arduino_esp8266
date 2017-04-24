@@ -120,7 +120,7 @@ void loop()
      String closeCommand = "AT+CIPCLOSE=";  ////////////////close the socket connection////esp command 
      closeCommand+=connectionId; // append connection id
      closeCommand+="\r\n";
-     sendData(closeCommand,3000,DEBUG);
+     sendData(closeCommand,300,DEBUG);
     }
   }
 }
@@ -153,6 +153,6 @@ void espsend(String d)
              cipSend += ",";
              cipSend +=d.length();
              cipSend +="\r\n";
-             sendData(cipSend,1000,DEBUG);
-             sendData(d,1000,DEBUG); 
+             sendData(cipSend,100,DEBUG);
+             sendData(d,100,DEBUG); 
          }
