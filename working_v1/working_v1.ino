@@ -31,7 +31,7 @@ void loop()
     /////////////////////Recieving from web browser to toggle led
     if(esp8266.find("+IPD,"))
     {
-     delay(300);
+     delay(5);
      connectionId = esp8266.read()-48;
      if(esp8266.find("pin="))
      { 
@@ -86,7 +86,7 @@ void loop()
     }
 
     //String res = " ";
-    espsend(res);
+//    espsend(res);
 
   resu = "<h4>Slot 3 is: </h4>";
       espsend(resu);
@@ -103,7 +103,7 @@ void loop()
     }
 
     //String ans = " ";
-    espsend(res);
+//    espsend(res);
     resu = "<h4>Slot 4 is: </h4>";
       espsend(resu);
     if(p4 == 3)
